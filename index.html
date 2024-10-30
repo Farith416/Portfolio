@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/04235e63ce.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="contanier">
+            <img class="logo" src="images/Logo.png" alt="Logo img">
+            <i id="btn-menu" class="fa-solid fa-bars"></i>
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#Portfolio">Portfolio</a>
+                <a href="#Contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero" id="home">
+        <div class="contanier">
+            <div class="content">
+                <h4>Hello, I'm</h4>
+                <h1>Farith Ahamed</h1>
+                <p>Software Engineer</p>
+                <a href="https://wa.me/6381417516" target="_blank"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+                <a href="https://www.instagram.com/farith._.41?igsh=OGQ5ZDc2ODk2ZA==" target="_blank"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                <a href="https://www.linkedin.com/in/farith-ahamed/" target="_blank"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                <a href="mailto:farithahamed.a@gmail.com" target="_blank"><i class="fa-solid fa-envelope fa-2x"></i></a>
+            </div>
+            <div>
+                <img class="Mypic1" src="images/MyPic1.jpg" alt="My pic">
+            </div>
+        </div>
+    </div>
+
+    <section id="about" class="about">
+        <div class="contanier">
+            <div class="about-img">
+                <img src="images/MyPic2.jpg" alt="Me">
+            </div>
+            <div class="content">
+                <h1>About <span>Me</span></h1>
+                <h3>Software Engineer</h3>
+                <p>Enthusiastic software developer with a passion for creating innovative solutions. Eager to learn new technologies in a collaborative team environment and contributing to innovative projects that make a meaningful impact. Committed to delivering high-quality work and continuously seeking new challenges and opportunities for growth.</p>     
+                <div class="btns">
+                        <a href="docs/Resume.pdf" class="btn" download="Resume.pdf">Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="contanier">
+            <div class="sec-top">
+                <h1>My <span>Skills</span></h1>
+            </div>
+            <div class="boxs">
+                <div class="box">
+                    <i class="fa-solid fa-sitemap"></i>
+                    <h3>Programming Languages</h3>
+                    <p>
+                        Proficient in Java, C++ and with basic knowledge of Python, I bring a strong foundation in object-oriented programming and algorithmic design to software development.
+                    </p>
+                </div>
+
+                <div class="box">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>
+                        Proficient in HTML, CSS, Bootstrap, JavaScript and React for front-end development with experience in creating responsive and visually appealing user interfaces. Skilled in back-end development with SQL, Node.js, MongoDB and Express.js.</p>
+                </div>
+
+                <div class="box">
+                    <i class="fa-brands fa-figma"></i>
+                    <h3>UI Design</h3>
+                    <p>Skilled in Figma, I possess hands-on experience in UI design. Proficient in crafting prototypes and user interfaces, I use Figma to bring concepts to life visually.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="Portfolio" class="portfolio">
+        <div class="contanier">
+            <div class="sec-top">
+                <h1>My <span>Projects</span></h1>
+            </div>
+
+            <div class="boxs">
+
+                <div class="box">
+                    <div class="box-hover">
+                        <span>Notepad Clone</span>
+                    </div>
+                    <img src="images/Notepad.png" alt="">
+                </div>
+
+                <div class="box">
+                    <div class="box-hover">
+                        <span>Profile Portfolio</span>
+                    </div>
+                    <img src="images/Portfolio.jpg" alt="">
+                </div>
+
+                <div class="box">
+                    <div class="box-hover">
+                        <span>Weather Forecast Application</span>
+                    </div>
+                    <img src="images/Weather.png" alt="">
+                </div>
+
+                <div class="box">
+                    <div class="box-hover">
+                        <span>BookHub</span>
+                    </div>
+                    <img src="images/image.png" alt="">
+                </div>
+
+                <div class="box">
+                    <div class="box-hover">
+                        <span>Rescue Pal</span>
+                    </div>
+                    <img src="images/Rp.png" alt="">
+                </div>
+
+                <div class="box">
+                    <div class="box-hover">
+                        <span>Personality Prediction</span>
+                    </div>
+                    <img src="images/Personality.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="Contact" class="contact">
+        <div class="container">
+            <div class="sec-top">
+                <h1>Contact <span>Me</span></h1>
+            </div>
+
+            <form id="myForm">
+                <input type="text" id="Fname" name="Fname" placeholder="First Name" required>
+                <input type="text" id="Lname" name="Lname" placeholder="Last Name" required>
+                <input type="number" id="num" name="num" placeholder="Phone Number" required>
+                <input type="email" id="email" name="email" placeholder="Email Address" required>
+                <textarea id="msg" name="msg" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn" onclick="alert('Submitted Successfully')">Send Message</button>
+            </form>
+        </div>
+    </section>    
+
+    <script src="main.js"></script>
+</body>
+</html>
